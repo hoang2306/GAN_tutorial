@@ -3,9 +3,7 @@ discriminator có thể coi là một mô hình phân loại (như logistic regr
 * $f[\mathbf{x}, \phi]$ trả về một giá trị vô hướng (xác suất input là real example)
 loss function for classification task using cross-entropy
 
-$$
-\hat{\phi}=\underset{\boldsymbol{\phi}}{\operatorname{argmin}}\left[\sum_i-\left(1-y_i\right) \log \left[1-\operatorname{sig}\left[\mathrm{f}\left[\mathbf{x}_i, \boldsymbol{\phi}\right]\right]\right]-y_i \log \left[\operatorname{sig}\left[\mathrm{f}\left[\mathbf{x}_i, \boldsymbol{\phi}\right]\right]\right]\right]
-$$
+$$\hat{\phi}=\underset{\boldsymbol{\phi}}{\operatorname{argmin}}\left[\sum_i-\left(1-y_i\right) \log \left[1\operatorname{sig}\left[\mathrm{f}\left[\mathbf{x}_i, \boldsymbol{\phi}\right]\right]\right]-y_i \log\left[\operatorname{sig}\left[\mathrm{f}\left[\mathbf{x}_i, \boldsymbol{\phi}\right]\right]\right]\right]$$
 
 
 
